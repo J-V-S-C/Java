@@ -1,0 +1,47 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+public class P1 {
+
+    
+
+
+public static void main(String[] args) {
+
+    Date dataHoraAtual = new Date();
+    String data = new SimpleDateFormat("dd/MM/yyyy").format(dataHoraAtual);
+    String hora = new SimpleDateFormat("hh:mm:ss").format(dataHoraAtual);
+        
+    
+
+    System.out.println("A data e a hora do sistena é");
+    System.out.println(data.toString());
+    System.out.println(hora.toString());
+
+
+
+
+
+
+
+    Locale Local = Locale.getDefault();
+
+        System.out.println("Seu pc está em:");
+        System.out.println(Local);
+
+
+
+    Dimension size = Toolkit.getDefaultToolkit().getScreenSize();
+
+    int largura = (int)size.getWidth();
+    int altura = (int)size.getHeight();
+    int resolucao =  largura *  altura;
+    System.out.println("A resolução é de "+ largura + "  " + altura + "  " + resolucao);
+    System.out.println();
+    
+    
+}
+}
